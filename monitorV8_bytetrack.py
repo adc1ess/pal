@@ -82,7 +82,7 @@ class TrackerWithTrails:
         # Initialize the window capture object
         self.capture_device = WindowCapture(window_name)
         # Load the YOLOv8 model (use your model path)
-        self.model = YOLO('../runs/trainV8/weights/best.pt')
+        self.model = YOLO('../exp/weights/best.pt')
         # Get class names from the model
         self.class_names = self.model.model.names
         # Dictionary to store object trajectories {track_id: [(x,y), ...]}
