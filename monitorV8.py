@@ -38,7 +38,7 @@ class GameCapture:
         self.w, self.h = right - left, bottom - top
 
         # Load YOLOv8 model (replace with your trained model path)
-        self.model = YOLO('F:/CVdataset/yolov5-master/runs/trainV8/weights/best.pt')
+        self.model = YOLO('exp/weights/best.pt')
 
         # Create OpenCV display window
         cv2.namedWindow("AI Detection", cv2.WINDOW_NORMAL)
