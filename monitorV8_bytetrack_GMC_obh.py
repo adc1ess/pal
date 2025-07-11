@@ -73,7 +73,7 @@ class WindowCapture:
 class TrackerWithTrails:
     def __init__(self, window_name):
         self.capture_device = WindowCapture(window_name)
-        self.model = YOLO('../runs/trainV8/weights/best.pt')
+        self.model = YOLO('../exp/weights/best.pt')
         self.class_names = self.model.model.names  # class index mapping
         self.trajectories = {}
 
